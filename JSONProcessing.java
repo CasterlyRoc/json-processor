@@ -12,7 +12,7 @@ public class JSONProcessing
 		try {
 			JSONParser jsonParser = new JSONParser();
 			JSONObject jsonObject = (JSONObject) jsonParser.parse(json);
-			JSONArray test = jsonObject.get("statusupdate");
+			JSONArray test = jsonObject.values();
 			System.out.print(test.toString());
 		} catch (ParseException e){
 			e.printStackTrace();
@@ -23,9 +23,9 @@ public class JSONProcessing
 	public static void main(String[] argv) {
 		Scanner in_scanner = new Scanner(System.in);
 
-		while(in_scanner.hasNext()) {
+
 			String json = in_scanner.nextLine();
 			processJSON(json);
-		}
+
 	}
 }
