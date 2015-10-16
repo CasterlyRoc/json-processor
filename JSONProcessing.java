@@ -12,8 +12,8 @@ public class JSONProcessing
 		try {
 			JSONParser jsonParser = new JSONParser();
 			JSONObject jsonObject = (JSONObject) jsonParser.parse(json);
-			JSONArray test = jsonObject.values();
-			System.out.print(test.toString());
+			Object obj = jsonObject.get("statusupdate");
+			System.out.println(obj.toString());
 		} catch (ParseException e){
 			e.printStackTrace();
 		}
