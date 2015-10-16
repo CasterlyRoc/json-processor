@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
-import org.json.*;
+import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -20,7 +20,6 @@ public class JSONProcessing
 			JSONObject obj2=(JSONObject)array.get(1);
 			System.out.println("======field \"1\"==========");
 			System.out.println(obj2.get("1"));
-
 		} catch (ParseException e){
 			e.printStackTrace();
 		}
