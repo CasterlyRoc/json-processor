@@ -10,12 +10,15 @@ public class JSONProcessing
 {
 	public static void processJSON(String json) {
 		try {
-			JSONParser jsonParser = new JSONParser();
-			Object obj = jsonParser.parse(json);
-			JSONArray array = (JSONArray)obj;
-			for(int i=0; i<array.size(); i++){
-				System.out.println("The " + i + " element of the array: " + array.get(i));
-			}
+			Object obj=JSONValue.parse(json);
+			JSONArray array=(JSONArray)obj;
+			System.out.println("======the 2nd element of array======");
+			System.out.println(array.get(1));
+			System.out.println();
+
+			JSONObject obj2=(JSONObject)array.get(1);
+			System.out.println("======field \"1\"==========");
+			System.out.println(obj2.get("1"));
 
 		} catch (ParseException e){
 			e.printStackTrace();
