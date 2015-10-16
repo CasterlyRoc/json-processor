@@ -2,13 +2,19 @@ import java.util.Scanner;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
+import org.json.simple.parser.ParseException;
 
 
 public class JSONProcessing
 {
 	public static void processJSON(String json) {
-		JSONParser jsonParser = new JSONParser();
+		try {
+			JSONParser jsonParser = new JSONParser();
+			JSONObject jsonObject = (JSONObject) jsonParser.parse(json);
+			String test = (String) jsonObject.get("statusupdate");
+		} catch (ParseException e){
+			e.printStackTrace();
+		}
 
 	}
 
