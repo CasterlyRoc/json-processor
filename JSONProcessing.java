@@ -13,7 +13,12 @@ public class JSONProcessing
 			JSONParser jsonParser = new JSONParser();
 			JSONObject jsonObject = (JSONObject) jsonParser.parse(json);
 			Object obj = jsonObject.get("statusupdate");
-			System.out.println(obj.toString());
+			JSONArray array = (JSONArray) obj;
+
+			for(int i=0; i<array.size(); i++){
+				System.out.println("The " + i + " element of the array: "+array.get(i));
+			}
+
 		} catch (ParseException e){
 			e.printStackTrace();
 		}
