@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import org.json.simple.JSONObject;
+import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -11,8 +12,8 @@ public class JSONProcessing
 		try {
 			JSONParser jsonParser = new JSONParser();
 			JSONObject jsonObject = (JSONObject) jsonParser.parse(json);
-			String test = jsonObject.toString();
-			System.out.println(test);
+			JSONArray test = jsonObject.get("statusupdate");
+			System.out.print(test.toString());
 		} catch (ParseException e){
 			e.printStackTrace();
 		}

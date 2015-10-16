@@ -24,8 +24,8 @@
       <file leaf-file-name="JSONProcessing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JSONProcessing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43871868">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.31337047">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,7 +36,7 @@
       <file leaf-file-name="example.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-1.25">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
@@ -72,9 +72,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="216" />
-    <option name="y" value="82" />
-    <option name="width" value="1440" />
+    <option name="x" value="720" />
+    <option name="y" value="23" />
+    <option name="width" value="720" />
     <option name="height" value="815" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -300,7 +300,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="216" y="82" width="1440" height="815" extended-state="0" />
+    <frame x="720" y="23" width="720" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -435,7 +435,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-1.25">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
@@ -443,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JSONProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43871868">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.31337047">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
