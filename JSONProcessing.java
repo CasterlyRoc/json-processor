@@ -1,11 +1,17 @@
 import java.util.Scanner;
+
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 
 public class JSONProcessing
 {
 	public static void processJSON(String json) {
-		JSONParser jsonParser = new JSONParser();
+		try {
+			JSONParser jsonParser = new JSONParser();
+			JSONObject jsonObject = (JSONObject) jsonParser.parse(json);
+			String test = (String) jsonObject.get("statusupdate");
+		}
 
 	}
 
