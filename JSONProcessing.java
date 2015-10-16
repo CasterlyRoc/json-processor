@@ -10,7 +10,7 @@ import org.json.simple.parser.ParseException;
 public class JSONProcessing
 {
 	public static void processJSON(String json) {
-		try {
+		
 			Object obj=JSONValue.parse(json);
 			JSONArray array=(JSONArray)obj;
 			System.out.println("======the 2nd element of array======");
@@ -20,9 +20,7 @@ public class JSONProcessing
 			JSONObject obj2=(JSONObject)array.get(1);
 			System.out.println("======field \"1\"==========");
 			System.out.println(obj2.get("1"));
-		} catch (ParseException e){
-			e.printStackTrace();
-		}
+
 
 	}
 
