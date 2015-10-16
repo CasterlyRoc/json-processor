@@ -11,12 +11,10 @@ public class JSONProcessing
 	public static void processJSON(String json) {
 		try {
 			JSONParser jsonParser = new JSONParser();
-			JSONObject jsonObject = (JSONObject) jsonParser.parse(json);
-			Object obj = jsonObject.get("statusupdate");
-			JSONArray array = (JSONArray) obj;
-
+			Object obj = jsonParser.parse(json);
+			JSONArray array = (JSONArray)obj;
 			for(int i=0; i<array.size(); i++){
-				System.out.println("The " + i + " element of the array: "+array.get(i));
+				System.out.println("The " + i + " element of the array: " + array.get(i));
 			}
 
 		} catch (ParseException e){
